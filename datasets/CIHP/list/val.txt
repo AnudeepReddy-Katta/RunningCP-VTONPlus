@@ -1,0 +1,6 @@
+/images/003218_0.jpg /labels/003218_0.jpg
+/images/003208_0.jpg /labels/003208_0.jpg
+/images/003195_0.jpg /labels/003195_0.jpg
+/images/003187_0.jpg /labels/003187_0.jpg
+/images/003179_0.jpg /labels/003179_0.jpg
+/images/003167_0.jpg /labels/003167_0.jpg
