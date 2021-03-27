@@ -1,16 +1,19 @@
-Credit to https://minar09.github.io/cpvtonplus/  for opensourcing his implementation.
+Credit to https://minar09.github.io/cpvtonplus/ for opensourcing his implementation.
 
-To test cp-vton-plus on custom images ( This is not exhaustive but might be helpful )
+Task -> To test cp-vton-plus on custom images ( This is not exhaustive but might be helpful )
 
-Pick model images of your choice 
-Run them on edgelabel.mlx using MATLAB online.
-Save generated edges and labels and paste them into CIHP_PGN's respective directories under data. ( convert edges from jpg to png )*
-Make neccessary changes in list/val.txt and list/valid.txt 
-Run python test_pgn.py in CIHP_PGN and check output folder ( Throws a lot of warnings )
-I have uploaded binaryMask.ipynb, Use it to create cloth and model masks. Adjust value of threshold to based on colour of image. ( Here we did it manually but there are methods to automate this )
-Copy model images to openpose/examples/media then run the follwing command - 
-bin\OpenPoseDemo.exe --model_pose COCO --image_dir examples/media/ --write_json jsons/ --write_images output_images/ --net_resolution -1x128
-Copy key points generated in openpose/jsons to data/test/pose in cp-vton-plus
-Change data/test_pairs according to your image names
+- Pick model images of your choice 
+- Run them on edgelabel.mlx using MATLAB online.
+- Save generated edges and labels and paste them into CIHP_PGN's respective directories under data. ( convert edges from jpg to png )*
+- Make neccessary changes in list/val.txt and list/valid.txt 
+- Run python test_pgn.py in CIHP_PGN and check output folder ( Throws a lot of warnings )
+- I have uploaded binaryMask.ipynb, Use it to create cloth and model masks. Adjust value of threshold to based on colour of image. ( Here we did it manually but there are methods to automate this )
+- Copy model images to openpose/examples/media then run the follwing command - 
+- bin\OpenPoseDemo.exe --model_pose COCO --image_dir examples/media/ --write_json jsons/ --write_images output_images/ --net_resolution -1x128
+- Copy key points generated in openpose/jsons to data/test/pose in cp-vton-plus
+- Change data/test_pairs according to your image names
 
 You are good to go now! 
+
+I have added CIHP_PGN & cpvtonplus where I have made couple of changes(version issues fixes and minor bug fixes) in other branches of this repo,
+I suggest you to go through orginal implementations rather than mine.
